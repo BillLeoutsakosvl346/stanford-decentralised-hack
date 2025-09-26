@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crowdfl"
+version = "0.1.0"
+description = "CrowdFL hackathon scaffold: packet-based FL simulation and deployment"
+readme = "README.md"
+authors = [{ name = "CrowdFL Contributors" }]
+requires-python = ">=3.10"
+dependencies = [
+  "flwr>=1.7.0,<2.0.0",
+  "fastapi>=0.110.0,<1.0.0",
+  "uvicorn[standard]>=0.29.0,<1.0.0",
+  "torch>=2.1.0",
+  "torchvision>=0.16.0",
+  "medmnist>=3.0.1",
+  "numpy>=1.24.0",
+  "pydantic>=2.6.0",
+  "python-dotenv>=1.0.1"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["crowdfl", "crowdfl.model", "crowdfl.data", "crowdfl.server", "crowdfl.client", "crowdfl.utils"]
+
+[project.optional-dependencies]
+web = ["jinja2>=3.1.0"]

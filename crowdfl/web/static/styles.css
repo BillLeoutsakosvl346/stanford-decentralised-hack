@@ -1,0 +1,54 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #111827;
+  color: #f8fafc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.progress {
+  margin-bottom: 2.5rem;
+}
+
+.progress-bar {
+  background-color: #1f2937;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 18px;
+}
+
+#progress-fill {
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  height: 100%;
+  width: 0;
+  transition: width 0.4s ease;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #cbd5f5;
+}
+
+.leaderboard ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+
+.leaderboard li {
+  padding: 0.25rem 0;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CrowdFL Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>CrowdFL Progress</h1>
+      <section class="progress">
+        <div class="progress-bar"><div id="progress-fill"></div></div>
+        <div class="progress-meta">
+          <span id="packet-count">0 / 0 packets</span>
+          <span id="val-accuracy">Val acc: 0.0%</span>
+        </div>
+      </section>
+
+      <section class="leaderboard">
+        <h2>Top Contributors</h2>
+        <ol id="leaderboard-list"></ol>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
